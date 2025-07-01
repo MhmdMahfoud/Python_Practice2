@@ -33,3 +33,23 @@ pet3.display()
 pet3.birthday()
 pet3.mark_adopted()
 pet3.display()
+pets = [
+    Pet("Buddy", "Dog", 5, True),
+    Pet("Whiskers", "Cat", 2),
+    Pet("Coco", "Parrot", 1),
+    Pet("Luna", "Dog", 4, True),
+    Pet("Milo", "Rabbit", 3)
+]
+
+def find_non_adopted(pet_list):
+    return [pet for pet in pet_list if not pet.adopted]
+
+print("Non-adopted pets:")
+non_adopted = find_non_adopted(pets)
+for pet in non_adopted:
+    pet.display()
+
+
+print("\nRenaming Coco to Kiwi:")
+pets[2].rename("Kiwi")
+pets[2].display()
