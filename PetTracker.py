@@ -14,3 +14,20 @@ class Pet:
  
     def birthday(self):
         self.age += 1
+pet1 = Pet("Buddy", "Dog", 5)
+pet2 = Pet("Whiskers", "Cat", 2)
+pet3 = Pet("Coco", "Parrot", 1)
+
+pet1.display()
+pet1.mark_adopted()
+pet1.display()
+print("*****************")
+pet2.display()
+pet2.birthday()
+pet2.display()
+print("*****************"
+)
+pet3.display()
+pet3.birthday()
+pet3.mark_adopted()
+pet3.display()
